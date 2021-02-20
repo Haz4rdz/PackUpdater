@@ -34,7 +34,7 @@ public class UpdateGUI extends GuiScreen
         ScaledResolution sr = new ScaledResolution(this.mc);
 
         this.continueAnyway = new GuiButton(10, ((sr.getScaledWidth() / 2) - 90), 190, 180, 20, "Menu Principal");
-        this.goToCurseForge = new GuiButton(11, ((sr.getScaledWidth() / 2) - 90), 160, 180, 20, "Baixar Atualização");
+        this.goToCurseForge = new GuiButton(11, ((sr.getScaledWidth() / 2) - 90), 160, 180, 20, "Baixar Atualizacao!");
 
         this.buttonList.add(this.continueAnyway);
         this.buttonList.add(this.goToCurseForge);
@@ -45,12 +45,12 @@ public class UpdateGUI extends GuiScreen
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks)
     {
-        String title = String.format("Atualização disponível para %s!", ConfigVariables.modpackName);
+        String title = String.format("Atualizacao disponivel para %s!", ConfigVariables.modpackName);
         String[] description;
 
-        description = (String.format("You have %s. New version is %s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
-                + "Visite o link abaixo e baixe a mais nova versão do modpack. Ao fazer isso, você não perde\n"
-                + "as correções e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
+        description = (String.format("Voce tem a v%s, baixe a nova versao v%s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
+                + "Visite o link abaixo e baixe a mais nova versao do modpack. Ao fazer isso, você nao perde\n"
+                + "as correcoes e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
 
         ScaledResolution screenRes = new ScaledResolution(this.mc);
 
