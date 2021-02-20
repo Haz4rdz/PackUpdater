@@ -49,7 +49,7 @@ public class UpdateGUI extends GuiScreen
         String[] description;
 
         description = (String.format("Voce tem a v%s, baixe e instale a nova versao v%s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
-                + "Visite o link abaixo e baixe a mais nova versao do modpack. Ao fazer isso, você nao perde\n"
+                + "Visite o link abaixo para baixar a mais nova versao do modpack. Ao fazer isso, você nao perde\n"
                 + "as correcoes e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
 
         ScaledResolution screenRes = new ScaledResolution(this.mc);
