@@ -33,8 +33,8 @@ public class UpdateGUI extends GuiScreen
     {
         ScaledResolution sr = new ScaledResolution(this.mc);
 
-        this.continueAnyway = new GuiButton(10, ((sr.getScaledWidth() / 2) - 90), 190, 180, 20, "Continue to Main Menu");
-        this.goToCurseForge = new GuiButton(11, ((sr.getScaledWidth() / 2) - 90), 160, 180, 20, "More Info (Opens Browser!)");
+        this.continueAnyway = new GuiButton(10, ((sr.getScaledWidth() / 2) - 90), 190, 180, 20, "Menu Principal");
+        this.goToCurseForge = new GuiButton(11, ((sr.getScaledWidth() / 2) - 90), 160, 180, 20, "Baixar Atualização");
 
         this.buttonList.add(this.continueAnyway);
         this.buttonList.add(this.goToCurseForge);
@@ -45,12 +45,12 @@ public class UpdateGUI extends GuiScreen
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks)
     {
-        String title = String.format("An update is available for %s!", ConfigVariables.modpackName);
+        String title = String.format("Atualização disponível para %s!", ConfigVariables.modpackName);
         String[] description;
 
         description = (String.format("You have %s. New version is %s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
-                + "Make sure you visit the modpack's CurseForge page soon to grab the latest\n"
-                + "update so you don't miss out on the new goodies the developers have added!\n\n\n").split("\n");
+                + "Visite o link abaixo e baixe a mais nova versão do modpack. Ao fazer isso, você não perde\n"
+                + "as correções e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
 
         ScaledResolution screenRes = new ScaledResolution(this.mc);
 
@@ -85,7 +85,7 @@ public class UpdateGUI extends GuiScreen
             }
             catch (URISyntaxException e)
             {
-                PackUpdater.LOGGER.error("Unable to open the CurseForge page! Maybe check your CurseForge URL in config/packupdater.cfg?");
+                PackUpdater.LOGGER.error("Unable to open the webpage! Maybe check your URL in config/packupdater.cfg?");
                 e.printStackTrace();
             }
         }
