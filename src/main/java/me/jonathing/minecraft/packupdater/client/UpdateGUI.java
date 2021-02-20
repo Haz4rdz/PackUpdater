@@ -48,7 +48,7 @@ public class UpdateGUI extends GuiScreen
         String title = String.format("Atualizacao disponivel para %s!", ConfigVariables.modpackName);
         String[] description;
 
-        description = (String.format("Voce tem a v%s, baixe a nova versao v%s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
+        description = (String.format("Voce tem a v%s, baixe e instale a nova versao v%s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
                 + "Visite o link abaixo e baixe a mais nova versao do modpack. Ao fazer isso, você nao perde\n"
                 + "as correcoes e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
 
