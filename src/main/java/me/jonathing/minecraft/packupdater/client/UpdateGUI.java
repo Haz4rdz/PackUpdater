@@ -48,9 +48,9 @@ public class UpdateGUI extends GuiScreen
         String title = String.format("Atualizacao disponivel para %s!", ConfigVariables.modpackName);
         String[] description;
 
-        description = (String.format("Voce tem a v%s, baixe e instale a nova versao v%s\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
-                + "Visite o link abaixo para baixar a mais nova versao do modpack. Ao fazer isso, você nao perde\n"
-                + "as correcoes e novidades adicionadas pelo Grande e Gostoso, Senhor do Universo, Biriba!\n\n\n").split("\n");
+        description = (String.format("Voce tem a v%s, baixe e instale a nova versao v%s\n\n", ConfigVariables.currentVersion, PackUpdater.getNewVersion())
+                + "Antes, lembre-se de salvar sua pasta JourneyMap em um local seguro e de\n"
+                + "recoloca-la na pasta do modpack apos instalar a atualizacao!\n\n\n").split("\n");
 
         ScaledResolution screenRes = new ScaledResolution(this.mc);
 
